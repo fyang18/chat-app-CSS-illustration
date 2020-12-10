@@ -1,0 +1,265 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.phone {
+    width: 65%;
+    padding: 3%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 1px 5px 15px 5px #D4D2D7; 
+    box-shadow: 1px 5px 30px 5px #D4D2D7;
+}
+
+.message {
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.background {
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+    border-radius: 20px 20px 10px 10px;
+}
+
+.camera {
+    text-align: center;
+    background-color: #ffffff;
+    width: 50%;
+    margin: auto;
+    height: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0 5%;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.left img {
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    width: 16%;
+}
+
+.description {
+    font-size: 10px;
+    color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: column;
+}
+
+.description h3 {
+    font-size: 14px;
+}
+
+.description p {
+	font-size: 8px;
+	margin-top: 3%;
+}
+
+.threeDots {
+    margin-right: 5%;
+}
+
+.leftSms {
+    width: 60%;
+    font-size: 8px;
+    margin: 4% 0 0 2%;
+    padding: 3%;
+    border-radius: 10px 10px 10px 2px;
+    background-color: lightgray;
+    color:#9374af;
+}
+
+.rightSms {
+    width: 60%;
+    font-size: 8px;
+    margin: 4% 2% 0 0;
+    padding: 3%;
+    border-radius: 10px 10px 2px 10px;
+    background-color: #ffffff;
+    color:#847e8a;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.images {
+    margin: 4% 2% 0 0;
+}
+
+.images img {
+    border-radius:  10px 10px 2px 10px;
+    width: 55px;
+}
+
+.choice {
+    padding: 5%;
+    font-size: 8px;
+    background-image: linear-gradient(to left,  hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    color: #ffffff;
+    margin: 4% 0 0 2%;
+    border-radius: 10px 10px 10px 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+.choice p {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.choice i {
+    margin-right: 8px;
+}
+
+.middleSend {
+    display: flex;
+    justify-content: center;
+}
+
+.send {
+	background-color: #ffffff;
+	margin: 7% 0 3%;
+	padding: 2%;
+	width: 90%;
+	border-radius: 30px;
+	display: flex;
+	font-size: 8px;
+	justify-content: space-between;
+	align-items: center;
+	color: #847e8a;
+	padding-left: 8%;
+}
+
+.angleRight {
+    background-color: #3c2657;
+    border-radius: 50%;
+    width: 15%;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%
+}
+
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.presentation h2 {
+	font-size: 38px;
+	font-weight: 500;
+}
+
+.presentation p {
+    width: 80%;
+    margin-top: 5%;
+    color: #b8b7bd;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/********Background Purple / Grey*********/
+
+
+.purple {
+    width: 50%;
+    height: 53vh;
+    background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%) );
+    position: absolute;
+    border-radius: 0 0 1000px 0;
+    z-index: -1;
+}
+
+.grey {
+    width: 50%;
+    height: 53vh;
+    background-color: #f9f4fa;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 1000px 0 0 0;
+    z-index: -1;
+}
+
+@media only screen and (min-width: 968px) {
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .phone {
+        width: 20%;
+        padding: 1%;
+        margin-left: 13%;
+    }
+
+    .angleRight {
+        width: 14%;
+    }
+
+    .presentation {
+        width: 34%;
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
+    .presentation p {
+        font-size: 14px;
+    }
+
+    .purple{
+        width: 30%;
+        height: 85vh;
+        border-radius: 0 0 1000px 1000px;
+    }
+
+    .grey{
+        width: 23%;
+        height: 85vh;
+        border-radius: 1000px 55px 0 0;
+    }
+}
